@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Project #1</title>
+</head>
+
+<body>
+    <form action="#">
+        <div id="distance">Distance Threshold 1:</div>
+        <input type="number" id="threshold" step="10" value="150" min="20" max="450">
+        <input id="submit" type="submit" value="Draw Thresholds" onclick="thresholds()">
+        <input id="draw-values" type="submit" value="Draw Values" onclick="locationValues()">
+        <input id="reset" type="reset" value="Reset" onclick="clearConsole()">
+
+        <p id="intro">
+            This Graph Plotter was a tool i made so that i can see how long the respinse time wqould be for my ultra sonic distance sensor.<br>
+            The Y Axis is Distance measured in Centi-Metres (cm)<br>
+            The X Axis is time measured in Micro-Seconds (us)</p>
+    </form>
+    <canvas id="myCanvas" width="1500px" height="750px"></canvas>
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
